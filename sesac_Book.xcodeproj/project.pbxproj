@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24D4E2E428892C9700333202 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D4E2E328892C9700333202 /* SearchViewController.swift */; };
+		24D4E2E628892C9D00333202 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D4E2E528892C9D00333202 /* DetailViewController.swift */; };
+		24D4E2E828892ECB00333202 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D4E2E728892ECB00333202 /* WebViewController.swift */; };
 		24F7711D2888089B007A7D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7711C2888089B007A7D4F /* AppDelegate.swift */; };
 		24F7711F2888089B007A7D4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F7711E2888089B007A7D4F /* SceneDelegate.swift */; };
 		24F771242888089B007A7D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F771222888089B007A7D4F /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24D4E2E328892C9700333202 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		24D4E2E528892C9D00333202 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		24D4E2E728892ECB00333202 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		24F771192888089B007A7D4F /* sesac_Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sesac_Book.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F7711C2888089B007A7D4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24F7711E2888089B007A7D4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				24F7711E2888089B007A7D4F /* SceneDelegate.swift */,
 				24F77130288808C9007A7D4F /* BookCollectionViewController.swift */,
 				24F77134288809AD007A7D4F /* BookCollectionViewCell.swift */,
+				24D4E2E328892C9700333202 /* SearchViewController.swift */,
+				24D4E2E528892C9D00333202 /* DetailViewController.swift */,
+				24D4E2E728892ECB00333202 /* WebViewController.swift */,
 				24F7713228880935007A7D4F /* MovieInfo.swift */,
 				24F771222888089B007A7D4F /* Main.storyboard */,
 				24F771252888089D007A7D4F /* Assets.xcassets */,
@@ -152,11 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D4E2E428892C9700333202 /* SearchViewController.swift in Sources */,
 				24F7711D2888089B007A7D4F /* AppDelegate.swift in Sources */,
 				24F7711F2888089B007A7D4F /* SceneDelegate.swift in Sources */,
 				24F7713328880936007A7D4F /* MovieInfo.swift in Sources */,
 				24F77135288809AD007A7D4F /* BookCollectionViewCell.swift in Sources */,
 				24F77131288808C9007A7D4F /* BookCollectionViewController.swift in Sources */,
+				24D4E2E628892C9D00333202 /* DetailViewController.swift in Sources */,
+				24D4E2E828892ECB00333202 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

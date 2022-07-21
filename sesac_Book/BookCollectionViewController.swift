@@ -14,6 +14,8 @@ class BookCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonClicked))
+        
         let layout = UICollectionViewFlowLayout()
         let spacing: CGFloat = 8
         let width = UIScreen.main.bounds.width - (spacing * 3)
@@ -33,5 +35,19 @@ class BookCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCollectionViewCell", for: indexPath) as! BookCollectionViewCell
         cell.configureCell(movie: movieList.movie[indexPath.row])
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: DetailViewController.identifier) as! DetailViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func searchButtonClicked() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: SearchViewController.identifier) as! SearchViewController
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
     }
 }
